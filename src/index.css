@@ -21,19 +21,6 @@ code {
   justify-content: space-between;
   width: 100%;
 }
-.sidebar {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background: rgba(19, 6, 46, 0.909);
-  justify-content: space-around;
-  position: sticky;
-  top: 0;
-  left: 0;
-  align-items: center;
-  display: none;
-}
 
 .content {
   width: 100%;
@@ -42,7 +29,10 @@ code {
   align-items: center;
   background: #090e16;
 }
+
 header {
+  position: sticky;
+  top: 0;
 }
 
 header div {
@@ -53,9 +43,9 @@ header div {
 }
 .nav_bar {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   height: 70%;
+  width: 30%;
 }
 .nav_bar * {
   text-decoration: none;
@@ -852,4 +842,83 @@ header {
 .burger img {
   width: 30px;
   height: 30px;
+}
+
+.titleAPI{
+  color: #fff;
+  font-size: 40px;
+  margin-top: 50px;
+}
+.wrapp{
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+.cardAPI{
+  width: 20%;
+  height: 380px;
+  border-radius: 20px;
+  border: 1px solid #7b4ae2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.cardApiImg{
+  width: 90%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.cardApiText{
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.cardApiName{
+  color: white;
+  font-size: 22px;
+}
+.cardApiStatus{
+  color: green;
+  font-size: 18px;
+  margin-top: 10px;
+
+}
+.cardApiSpecies{
+  color: red;
+  font-size: 22px;
+  margin-top: 5px;
+
+}
+.cardDetail{
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.cardDetailImg{
+  width: 500px;
+  height: 500px;
+}
+.cardDetailDescription{
+  color: white;
+  margin-left: 60px;
+  font-size: 28px;
+}
+.detailName{
+
+}
+
+.detailStatus{
+  margin-top: 50px;
+}
+.detailSPecies{
+  margin-top: 40px;
 }

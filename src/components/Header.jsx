@@ -1,17 +1,16 @@
 import React from "react";
-import BurgerMenu from "../img/burger-menu.png";
 import HomeLogo from "../img/Logo.svg";
-
-const Header = ({ sidebar }) => {
+import { Link, NavLink } from "react-router-dom";
+const Header = () => {
   return (
     <header>
       <div className="header">
         <div className="logo_header">
           <img src={HomeLogo} alt="" />
         </div>
-        <div onClick={sidebar} className="burger">
-          <img src={BurgerMenu} alt="" />
-          <span>MENU</span>
+        <div className="nav_bar">
+          <NavLink className="header_nav" to="/">Home</NavLink>
+          <NavLink className="header_nav" to="rickMorty">Rick and Morty</NavLink>
         </div>
       </div>
     </header>
